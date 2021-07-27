@@ -2,9 +2,8 @@ version: 1.0
 runtime: python3 
 build:
   commands:
-    pre-build:
-      - apt install git -y
     build:
+      - yum install git
       - pip install -r requirements_web.txt
 run: 
   command: python src/index.py
