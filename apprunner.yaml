@@ -3,7 +3,7 @@ runtime: python3
 build:
   commands:
     build:
-      - yum install git
+      - yum install git -y
       - pip install -r requirements_web.txt
 run: 
   command: python src/index.py
